@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+</head>
+<body>
+<script>
+fetch("https://ipapi.co/json/")
+.then(res => res.json())
+.then(data => {
+  const highCPM = ["US","CA","GB","AU","DE","FR","NL","SE","NO"];
+  if (highCPM.includes(data.country)) {
+    window.location.href = "https://shrinkme.click/installer"; // USA/EU
+  } else {
+    window.location.href = "https://link-target.net/2981971/ayaZYmnrMiul"; // LATAM
+  }
+});
+</script>
+<p>Redirecting...</p>
+</body>
+</html>
